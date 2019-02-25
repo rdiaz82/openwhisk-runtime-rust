@@ -1,6 +1,6 @@
 [workspace]
 
 members = [
-"actionLoop",
+"action_loop",
 "actions",
 ]

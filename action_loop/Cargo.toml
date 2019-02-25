@@ -1,5 +1,5 @@
 [package]
-name = "actionLoop"
+name = "action_loop"
 version = "0.1.0"
 authors = ["Roberto Diaz <roberto@theagilemonkeys.com>"]
 
