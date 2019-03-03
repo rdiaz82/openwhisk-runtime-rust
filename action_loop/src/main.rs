@@ -34,7 +34,7 @@ fn main() {
         }
         let action_results = actionMain(payload);
         let mut fd3 = unsafe { File::from_raw_fd(3) };
-        write!(&mut fd3, "{}", action_results);
+        write!(&mut fd3, "{}\n", serde_json::to_string(&action_results).unwrap());
         stdout().flush();
         stderr().flush();
     }

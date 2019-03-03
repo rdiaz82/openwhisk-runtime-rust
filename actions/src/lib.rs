@@ -4,10 +4,7 @@ use std::collections::HashMap;
 use serde_json::Value;
 
 
-pub fn main(input_data: HashMap<String, Value>) -> String {
-    let mut output: String = "Echo received data:".to_owned();
-    for (key, value) in input_data {
-        output = format!("{} {}:{}", output, key, value.to_string());
-    }
-    output
+pub fn main(mut input_data: HashMap<String, Value>) -> HashMap<String, Value> {
+    input_data.insert("added_key".to_string(),Value::String("test".to_string()));
+    input_data
 }
